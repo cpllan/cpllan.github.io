@@ -14,14 +14,15 @@ html(lang='en')
           include ./includes/nav
       .headline-wrap
         .row.hero-wrap
-          .price-badge $50
-          .headline-content.medium-12.large-8.columns
+          .headline-content.medium-8.large-8.columns
             p.price $50 Local Tow Special
-            h1 24/7 Towing and recovery Services
+            h1 24/7 Towing #[span.mobile-hidden and car recovery] Services
             p Proudly serving  Joliet, Romeoville, Bolingbrook,<br> Lockport and surrounding areas.
-            .headline-phone
+            .headline-phone.mobile-hidden
               span CALL US FOR A FAST SERVICE:
               a.phone-hero(href="tel:18159810456") (815) 981 - 0456
+            a.mobile-hero-phone.mobile-only(href="tel:18159810456") 
+                p Tap to Call 
           svg.icon.icon-price-badge.animate.flipInY
             use(xlink:href='#icon-price-badge')
     section.services-home
@@ -53,6 +54,8 @@ html(lang='en')
       .row
         .small-12.medium-4.medium-centered.columns
           a(href="tel:18159810456").phone-cities
+            svg.icon.icon-phone
+              use(xlink:href="#icon-phone")
             span We are here to help 24/7
             p (815) 981 - 0456
     section.customer-reviews
@@ -90,6 +93,7 @@ html(lang='en')
             li: a(href="#") Towing Services in Romeoville, IL
     .copyright
       .row
-        p Copyright &copy; 2011-2015 Sergios Towing Services | #[a(href="#") Web Design] by #[a(href="#") Alex Capellan]
+        .small-12.columns
+          p Copyright &copy; 2011-2015 Sergios Towing Services | #[a(href="#") Web Design] by #[a(href="#") Alex Capellan]
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
     script(src="assets/js/min/functions-min.js")
