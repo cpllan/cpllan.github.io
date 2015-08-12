@@ -1,19 +1,18 @@
 .icon-logo {
-	width: 160px;
-	margin-left: 0.5em;
-	cursor: pointer;
+	width: 200px;
+	height: 112px;
 }
 #icon-logo .path1 {
-	fill: #ffcb3c;
-}
-#icon-logo .path2, #icon-logo .path3 {
-	fill: #262223;
-}
-#icon-logo .path4 {
 	fill: #fff;
 }
-#icon-logo .path5 {
+#icon-logo .path2 {
 	fill: #fec015;
+}
+#icon-logo .path3 {
+	fill: #ffcb3c;
+}
+#icon-logo .path4, #icon-logo .path5 {
+	fill: #262223;
 }
 .icon-phone {
 	width: 40px;
