@@ -1942,7 +1942,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1328,
+		"initialSize": 2830,
 		"inputAbbreviatedPath": "\/assets\/img\/fallback-icons\/gas-filling.png",
 		"outputAbbreviatedPath": "\/assets\/img\/fallback-icons\/gas-filling.png",
 		"outputPathIsOutsideProject": 0,
@@ -2048,6 +2048,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/footer-bg-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 181952,
+		"inputAbbreviatedPath": "\/assets\/img\/footer-bg-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/footer-bg-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/footer-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2055,6 +2066,17 @@
 		"initialSize": 78456,
 		"inputAbbreviatedPath": "\/assets\/img\/footer-bg.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/footer-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/homepage-bg-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64199,
+		"inputAbbreviatedPath": "\/assets\/img\/homepage-bg-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/homepage-bg-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
