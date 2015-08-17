@@ -1,4 +1,6 @@
 // @codekit-prepend "owl.carousel.min.js";
+// @codekit-prepend  "sidr.js";
+
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
       loop:true,
@@ -24,4 +26,11 @@ $(document).ready(function(){
           }
       }
   });
+});
+
+$(document).ready(function() {
+    $('#mobile-menu').sidr({
+      name: 'mobile-menu-section',
+      source: '#mobile-menu-content'
+    });
 });
