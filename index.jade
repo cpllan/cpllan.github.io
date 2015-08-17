@@ -22,7 +22,7 @@ html(lang='en')
               span CALL US FOR A FAST SERVICE:
               a.phone-hero(href="tel:18159810456") (815) 981 - 0456
             a.mobile-hero-phone.mobile-only(href="tel:18159810456") 
-                p Tap to Call 
+                p Tap to Call us
             svg.icon.icon-Group
               use(xlink:href='#icon-Group')
           svg.icon.icon-price-badge.animate.flipInY
@@ -48,7 +48,7 @@ html(lang='en')
       .row
         .small-8.small-centered.columns.mobile-content-phone
           p We are here to help 24/7
-          a(href="#") Tap to call
+          a(href="tel:18159810456") Tap to call us
     section.coveragearea.mobile-hidden
       .row
         .small-12.medium-4.medium-centered.columns
@@ -94,5 +94,12 @@ html(lang='en')
       .row
         .small-12.columns
           p Copyright &copy; 2011-2015 Sergios Towing Services | #[a(href="#") Web Design] by #[a(href="#") Alex Capellan]
+    .sb-slidebar.sb-right.sb-style-push
+      ul.mobile-nav
+        li: a(href="") Services
+        li: a(href="") Coverage Area
+        li: a(href="") Contact
+        //- li: a(href="tel:18159810456").mobile-nav-phone Tap to call us
+          
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
     script(src="assets/js/min/functions-min.js")

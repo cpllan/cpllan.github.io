@@ -1,5 +1,5 @@
 // @codekit-prepend "owl.carousel.min.js";
-// @codekit-prepend  "sidr.js";
+// @codekit-prepend "slidebars.min.js";
 
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
@@ -20,17 +20,18 @@ $(document).ready(function(){
           },
           1000:{
               items:3,
-              nav:false,
               dots:true,
-              slideBy:3
+              slideBy:3,
+              autoplay:true,
+              responsiveRefreshRate:100,
+              navigation:true
           }
       }
   });
 });
 
-$(document).ready(function() {
-    $('#mobile-menu').sidr({
-      name: 'mobile-menu-section',
-      source: '#mobile-menu-content'
-    });
-});
+(function($) {
+  $(document).ready(function() {
+    $.slidebars();
+  });
+}) (jQuery);

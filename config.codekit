@@ -1942,7 +1942,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2830,
+		"initialSize": 1328,
 		"inputAbbreviatedPath": "\/assets\/img\/fallback-icons\/gas-filling.png",
 		"outputAbbreviatedPath": "\/assets\/img\/fallback-icons\/gas-filling.png",
 		"outputPathIsOutsideProject": 0,
@@ -2048,6 +2048,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/footer-bg-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179072,
+		"inputAbbreviatedPath": "\/assets\/img\/footer-bg-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/footer-bg-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/footer-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2092,45 +2103,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/jpanel.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/jpanel.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/jpanel-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/assets\/js\/jquery-2.1.4.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery-2.1.4.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery-2.1.4.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/jquery.slicknav.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/jquery.slicknav.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.slicknav-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/lazyload-maps.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/lazyload-maps.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/lazyload-maps-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2202,34 +2180,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/pikabu.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/pikabu.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/pikabu-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/sidr.js": {
+	"\/assets\/js\/slidebars.min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/sidr.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/sidr-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/slider.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/slider.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/slider-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/slidebars.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/slidebars.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
