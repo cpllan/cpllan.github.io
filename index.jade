@@ -14,9 +14,9 @@ html(lang='en')
           include ./includes/nav
       .headline-wrap
         .row.hero-wrap
-          .headline-content.medium-8.large-8.columns
+          .headline-content.medium-10.medium-centered.large-8.large-pull-2.columns
             p.price $50 Local Tow Special
-            h1 24/7 Towing #[span.mobile-hidden and car recovery] Services
+            h1 24/7 Towing #[span.mobile-hidden and car <br>recovery] Services
             p Providing exceptional towing services in the Joliet, Romeoville, Bolingbrook, Lockport area
             .headline-phone.mobile-hidden
               span CALL US FOR A FAST SERVICE:
@@ -33,7 +33,7 @@ html(lang='en')
     
     section.whyus
       .row
-        .small-12.medium-10.medium-centered.columns
+        .small-12.medium-12.medium-centered.large-10.columns
           h2.title-section #[span.mobile-hidden Exceptional and] reliable towing service in and around  Joliet, IL.
         .small-12.medium-6.columns.why-us-item
           //- h4 Reliable towing service with a Smile
@@ -49,9 +49,9 @@ html(lang='en')
         .small-8.small-centered.columns.mobile-content-phone
           p We are here to help 24/7
           a(href="tel:18159810456") Tap to call us
-    section.coveragearea.mobile-hidden
+    //- section.coveragearea.mobile-hidden
       .row
-        .small-12.medium-4.medium-centered.columns
+        .small-12.medium-5.large-4.medium-centered.columns
           a(href="tel:18159810456").phone-cities
             svg.icon.icon-phone
               use(xlink:href="#icon-phone")
@@ -68,38 +68,9 @@ html(lang='en')
           p.review-text "Sergios Towing Services team is always available to help you. Our coverage are include <strong>Joliet</strong>, <strong>Bolingbrook</strong>, <strong>Lockport</strong>, <strong>Romeoville</strong> and souroundung areas. So if you in the middle of the road because you need gas or if you just need a tow."
           h4.name-review —  Megan Smith —
     footer.main-footer
-      .row
-        .small-12.medium-4.columns
-          h4.footer-title Site Navigation
-          ul.footer-nav
-            li: a(href="#") Home
-            li: a(href="#") Services
-            li: a(href="#") Coverage Area
-            li: a(href="#") Contact
-        .small-12.medium-4.columns
-          h4.footer-title Our Services
-          ul.footer-nav
-            li: a(href="#") 24/7 Local Towing
-            li: a(href="#") Car Recovery Service
-            li: a(href="#") Roadside Assistance
-            li: a(href="#") Gas Filling
-        .small-12.medium-4.columns
-          h4.footer-title Coverage Area
-          ul.footer-nav
-            li: a(href="#") Towing Services in Joliet, IL
-            li: a(href="#") Towing Services in Boolingbrook, IL
-            li: a(href="#") Towing Services in Lockport, IL
-            li: a(href="#") Towing Services in Romeoville, IL
-    .copyright
-      .row
-        .small-12.columns
-          p Copyright &copy; 2011-2015 Sergios Towing Services | #[a(href="#") Web Design] by #[a(href="#") Alex Capellan]
-    .sb-slidebar.sb-right.sb-style-push
-      ul.mobile-nav
-        li: a(href="") Services
-        li: a(href="") Coverage Area
-        li: a(href="") Contact
-        //- li: a(href="tel:18159810456").mobile-nav-phone Tap to call us
+      include ./includes/footer
+    include ./includes/copyright
+    include ./includes/mobilenav
           
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
     script(src="assets/js/min/functions-min.js")

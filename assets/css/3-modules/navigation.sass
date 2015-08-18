@@ -1,11 +1,12 @@
 .site-header
-  background: rgba(16, 16, 16, 0.2)
+  background: $fadedblack
   position: relative
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+  z-index: 9999999!important
 .site-logo
   svg
     margin-top: 18px
-    width: 40%
+    width: 120px
 .main-navigation
   ul
     float: right
@@ -48,7 +49,7 @@
       &.mobile-nav-phone
         background: $brightyellow
         color: $fadedblack
-@media only screen and (max-width: 40em)
+@media only screen and (max-width: 40.0625em)
   .site-header
     position: fixed
     width: 100%
@@ -75,11 +76,17 @@
     background: $fadedblack
   .site-header
     height: 77px
-@media only screen and (min-width: 40.0622em)
+@media only screen and (min-width: 40.0625em)
   .mobile-nav
     display: none
   .mobile-only
     display: none
+@media only screen and (min-width: 40.0625em) and (max-width: 56.250em)
+  .main-navigation
+    ul
+      li
+        a
+          font-size: 14.5px
 
 
 html, body, #sb-site, .sb-site-container, .sb-slidebar

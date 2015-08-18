@@ -2081,6 +2081,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/homepage-bg-tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35676,
+		"inputAbbreviatedPath": "\/assets\/img\/homepage-bg-tablet.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/homepage-bg-tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/homepage-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2191,14 +2202,38 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/includes\/camion.html": {
-		"fileType": 8192,
-		"ignore": 0,
+	"\/includes\/copyright.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/camion.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/includes\/copyright.jade",
+		"outputAbbreviatedPath": "\/includes\/copyright.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/includes\/footer.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/footer.jade",
+		"outputAbbreviatedPath": "\/includes\/footer.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/includes\/mobilenav.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/mobilenav.jade",
+		"outputAbbreviatedPath": "\/includes\/mobilenav.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/includes\/nav.jade": {
 		"compileDebug": 1,

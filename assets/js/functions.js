@@ -18,12 +18,12 @@ $(document).ready(function(){
               dots:true,
               slideBy:2
           },
-          1000:{
+          900:{
               items:3,
               dots:true,
               slideBy:3,
               autoplay:true,
-              responsiveRefreshRate:100,
+              responsiveRefreshRate:200,
               navigation:true
           }
       }
