@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    title Sergio's Towing
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="assets/css/main.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+  body
+    include ./includes/svg.html
+    section.inner-header
+      header.site-header
+        .row
+          include ./includes/nav
+      .headline-wrap
+        .row.hero-wrap
+          .headline-content.inner-headline.medium-10.medium-centered.large-12.columns
+            p.page-section Contact us 
+            h1 How Can We Help?
+            p For immediate service please give us a call to #[a(href="tel:18159810456").phone-desc (815) 981-0456], but for non immediate service you can use the form below. 
+            a.inner-cta(href="tel:18159810456") tap to call
+    section.sevices-services
+      .services-section
+        include ./includes/contact
+    
+    .cta-inner
+      .row
+        .small-12.columns
+          a(href="tel:18159810456")
+            .left-cta
+              svg.icon.icon-phone-2
+                use(xlink:href='#icon-phone-2')
+            .right-cta
+              h4 Tap to call us
+              p 24/7 fast towing service
+            //- .faux-button Tap to Call
+    footer.main-footer
+      include ./includes/footer
+    include ./includes/copyright
+    include ./includes/mobilenav
+          
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+    script(src="assets/js/min/functions-min.js")

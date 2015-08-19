@@ -1,0 +1,45 @@
+.row
+  .small-12.medium-9.columns
+    h3 This is a title for the towing service page
+    p We are an experienced, fully licensed and insured towing company that places an emphasis on a quick response and courteous customer service.  We know if you're calling us you're most likely in a bind and thrown off schedule and we want to help you get back on track quickly and safely.
+    h4 Check our coverage area map
+    #map
+      
+    script(src="https://maps.googleapis.com/maps/api/js")
+    script.
+              // When the window has finished loading create our google map below
+              google.maps.event.addDomListener(window, 'load', init);
+              function init() {
+                  // Basic options for a simple Google Map
+                  // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                  var mapOptions = {
+                      // How zoomed in you want the map to start at (always required)
+                      zoom: 10,
+
+                      // The latitude and longitude to center the map (always required)
+                      center: new google.maps.LatLng(41.440, -88.0816667), // New York
+
+                      // How you would like to style the map. 
+                      // This is where you would paste any style found on Snazzy Maps.
+                      styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#000000"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":"4"}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"on"},{"saturation":"-100"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":20},{"visibility":"on"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"80"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"color":"#797979"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.terrain","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#dfdfdf"},{"lightness":21},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#"},{"visibility":"on"},{"weight":"3.00"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#DADF0A"},{"gamma":"0.6"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#DADF0A"},{"weight":"4.00"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.stroke","stylers":[{"weight":"1"},{"gamma":"0.6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#b8b8b8"},{"lightness":18},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#b6b6b6"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"on"},{"color":"#656565"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#cdcdcd"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#b6b6b6"},{"visibility":"on"}]},{"featureType":"road.local","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#c5c5c5"},{"lightness":19},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#c0d8e3"},{"lightness":17},{"visibility":"on"}]}]
+                  };
+                  // Get the HTML DOM element that will contain your map 
+                  // We are using a div with id="map" seen below in the <body>
+                  var mapElement = document.getElementById('map');
+                
+                  // Create the Google Map using our element and options defined above
+                  var map = new google.maps.Map(mapElement, mapOptions);
+                  
+                  // Let's also add a marker while we're at it
+                  var marker = new google.maps.Marker({
+                      position: new google.maps.LatLng(41.545, -88.0816667),
+                      map: map,
+                      title: 'Snazzy!'
+                  });
+              }
+    p For in town towing and roadside assistance services our coverage area extend to the following cities. Please contact us for Long Distance towing from our covered area to other cities outside of set area.
+    ul.row.cities-corv
+      li.small-6.columns Joliet, Il
+      li.small-6.columns Romeoville, Il
+      li.small-6.columns Lockport, Il
+      li.small-6.columns Plainfield, Il

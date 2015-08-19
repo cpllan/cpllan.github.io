@@ -1,4 +1,12 @@
-<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sergio's Towing</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body><svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-arrow-left" viewBox="0 0 559 1024">
 	<title>arrow-left</title>
@@ -102,3 +110,153 @@
 </symbol>
 </defs>
 </svg>
+
+    <section class="inner-header">
+      <header class="site-header">
+        <div class="row"><a href="/" class="site-logo small-4 medium-2 columns"> 
+            <svg class="icon icon-logo">
+              <use xlink:href="#icon-logo"></use>
+            </svg></a>
+          <nav id="mobile-menu-content" class="main-navigation small-6 medium-10 right columns">
+            <ul>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="coverage.html">Coverage Area</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="tel:18159810456" class="phone-nav">(815) 981 - 0456</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-button mobile-only small-2 right columns right columns sb-toggle-right mobile-menu-button">
+            <svg class="icon icon-hamburger">
+              <use xlink:href="#icon-hamburger"></use>
+            </svg>
+          </div><a href="tel:18159810456" class="mobile-button mobile-only small-2 columns mobile-menu-button">
+            <svg class="icon icon-phone-menu">
+              <use xlink:href="#icon-phone-menu"></use>
+            </svg></a>
+        </div>
+      </header>
+      <div class="headline-wrap">
+        <div class="row hero-wrap">
+          <div class="headline-content inner-headline medium-10 medium-centered large-12 columns">
+            <p class="page-section">Our Coverage Area</p>
+            <h1>In and around Joliet, Il</h1>
+            <p>Our coverage area for in-town towing and roadside assistance services extend to the Joliet, Plainfield, Lockport areas.</p><a href="tel:18159810456" class="inner-cta">tap to call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sevices-services">
+      <div class="services-section">
+        <div class="row">
+          <div class="small-12 medium-9 columns">
+            <h3>This is a title for the towing service page</h3>
+            <p>We are an experienced, fully licensed and insured towing company that places an emphasis on a quick response and courteous customer service.  We know if you're calling us you're most likely in a bind and thrown off schedule and we want to help you get back on track quickly and safely.</p>
+            <h4>Check our coverage area map</h4>
+            <div id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js"></script>
+            <script>
+              // When the window has finished loading create our google map below
+              google.maps.event.addDomListener(window, 'load', init);
+              function init() {
+                  // Basic options for a simple Google Map
+                  // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                  var mapOptions = {
+                      // How zoomed in you want the map to start at (always required)
+                      zoom: 10,
+              
+                      // The latitude and longitude to center the map (always required)
+                      center: new google.maps.LatLng(41.440, -88.0816667), // New York
+              
+                      // How you would like to style the map. 
+                      // This is where you would paste any style found on Snazzy Maps.
+                      styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#000000"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":"4"}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"on"},{"saturation":"-100"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":20},{"visibility":"on"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"80"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"color":"#797979"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.landcover","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.terrain","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#dfdfdf"},{"lightness":21},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#"},{"visibility":"on"},{"weight":"3.00"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#DADF0A"},{"gamma":"0.6"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#DADF0A"},{"weight":"4.00"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.stroke","stylers":[{"weight":"1"},{"gamma":"0.6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#b8b8b8"},{"lightness":18},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#b6b6b6"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"on"},{"color":"#656565"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#cdcdcd"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#b6b6b6"},{"visibility":"on"}]},{"featureType":"road.local","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#c5c5c5"},{"lightness":19},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#c0d8e3"},{"lightness":17},{"visibility":"on"}]}]
+                  };
+                  // Get the HTML DOM element that will contain your map 
+                  // We are using a div with id="map" seen below in the <body>
+                  var mapElement = document.getElementById('map');
+                
+                  // Create the Google Map using our element and options defined above
+                  var map = new google.maps.Map(mapElement, mapOptions);
+                  
+                  // Let's also add a marker while we're at it
+                  var marker = new google.maps.Marker({
+                      position: new google.maps.LatLng(41.545, -88.0816667),
+                      map: map,
+                      title: 'Snazzy!'
+                  });
+              }
+            </script>
+            <p>For in town towing and roadside assistance services our coverage area extend to the following cities. Please contact us for Long Distance towing from our covered area to other cities outside of set area.</p>
+            <ul class="row cities-corv">
+              <li class="small-6 columns">Joliet, Il</li>
+              <li class="small-6 columns">Romeoville, Il</li>
+              <li class="small-6 columns">Lockport, Il</li>
+              <li class="small-6 columns">Plainfield, Il</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cta-inner">
+      <div class="row">
+        <div class="small-12 columns"><a href="tel:18159810456">
+            <div class="left-cta">
+              <svg class="icon icon-phone-2">
+                <use xlink:href="#icon-phone-2"></use>
+              </svg>
+            </div>
+            <div class="right-cta">
+              <h4>Tap to call us</h4>
+              <p>24/7 fast towing service</p>
+            </div></a></div>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="row">
+        <div class="small-12 medium-4 columns">
+          <h4 class="footer-title">Site Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Coverage Area</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-nav">
+            <li><a href="#">24/7 Local Towing</a></li>
+            <li><a href="#">Car Recovery Service</a></li>
+            <li><a href="#">Roadside Assistance</a></li>
+            <li><a href="#">Gas Filling</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h4 class="footer-title">Our Location</h4>
+          <ul class="footer-nav">
+            <p>1333 Caton Farm Rd,<br> Lockport, IL 60441</p>
+            <p>For a fast service call<br> <a href="tel:18159810456">(815) 981 - 0456</a></p>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="row">
+        <div class="small-12 columns">
+          <p>Copyright &copy; 2011-2015 Sergios Towing Services | <a href="#">Web Design</a> by <a href="#">Alex Capellan</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="sb-slidebar sb-right sb-style-overlay">
+      <ul class="mobile-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="coverage.html">Coverage Area</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="" class="sb-close">Close</a></li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/min/functions-min.js"></script>
+  </body>
+</html>
