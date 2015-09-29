@@ -1,0 +1,57 @@
+html
+  height: 100vh
+body
+  background:
+    image: url(../img/bg.jpg)
+    size: 100%
+    position: center
+    repeat: no-repeat
+    color: #202020
+  text-transform: uppercase
+  text-align: center
+  font-family: "PT Mono", monospace
+  font-size: 16px
+a
+  color: #e69310
+.top-section
+  width: 100%
+  position: absolute
+  top: 0
+  margin-top: 10vh
+  h1
+    color: #fff
+    font-size: 44px
+    letter-spacing: 1px
+    span
+      margin-top: 10px
+      display: block
+      font-size: 16px
+      letter-spacing: 1px
+      font-weight: 400
+.bottom-section
+  width: 100%
+  position: absolute
+  bottom: 0
+  margin-bottom: 10vh
+  h3
+    color: #fff
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      display: inline-block
+      a
+        padding: 0 15px
+@media (max-width: 700px)
+  .top-section
+    h1
+      font-size: 26px
+      letter-spacing: 0
+      span
+        letter-spacing: 0
+    margin-top: 15vh
+  .bottom-section
+    h3
+      font-size: 20px
+    margin-bottom: 2vh
